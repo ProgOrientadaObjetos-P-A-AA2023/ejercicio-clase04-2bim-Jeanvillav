@@ -15,7 +15,10 @@ public class PasajeMenorEdad extends PasajeUrbano {
         super(pasaje);
     }
     
-        
+        @Override
+    public void establecerValorPasaje() {
+        valorPasaje= valorFijo-(valorFijo*0.20);
+    }
     @Override
     public String toString(){
         return String.format("Tipo de pasaje: Menor de edad\n"

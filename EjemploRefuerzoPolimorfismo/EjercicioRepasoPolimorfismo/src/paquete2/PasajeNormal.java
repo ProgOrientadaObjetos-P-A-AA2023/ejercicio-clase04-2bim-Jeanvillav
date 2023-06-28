@@ -15,7 +15,10 @@ public class PasajeNormal extends PasajeUrbano {
         super(pasaje);
     }
     
-    
+    @Override
+    public void establecerValorPasaje() {
+        valorPasaje= valorFijo;
+    }
     @Override
     public String toString(){
         return String.format("Tipo de pasaje: Normal\n"

@@ -22,4 +22,9 @@ public class PasajeUniversitario extends PasajeUrbano {
                 super.toString()
                 );
     }
+
+    @Override
+    public void establecerValorPasaje() {
+        valorPasaje= valorFijo-(valorFijo*0.30);
+    }
 }
